@@ -631,6 +631,7 @@ section {
 /* Social Links */
 .social-links {
     display: flex;
+    justify-content: center;
     gap: 1.5rem;
     margin-top: 2rem;
     flex-wrap: wrap;
@@ -704,6 +705,26 @@ section {
 .hobby-card p {
     color: var(--text-secondary);
     line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+.hobby-links {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.hobby-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.hobby-link:hover {
+    color: var(--primary-dark);
 }
 
 /* Project Tags */
