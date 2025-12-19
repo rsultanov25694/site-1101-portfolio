@@ -8,7 +8,7 @@ This website uses JavaScript's `fetch()` API to load reusable components, which 
 
 ### Quick Start
 
-Run one of these commands in the project directory:
+Run the following command in the project directory:
 
 **Python 3:**
 ```bash
