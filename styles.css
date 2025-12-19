@@ -223,7 +223,6 @@ body {
 .repo-link {
     margin-top: 2rem;
     display: flex;
-    justify-content: center;
 }
 
 .repo-link-button {
@@ -442,14 +441,17 @@ section {
     margin-bottom: 1rem;
 }
 
-.project-link {
+/* External link styles - shared by projects and hobbies */
+.project-link,
+.hobby-link {
     color: var(--primary-color);
     text-decoration: none;
     font-weight: 600;
     transition: color 0.3s ease;
 }
 
-.project-link:hover {
+.project-link:hover,
+.hobby-link:hover {
     color: var(--primary-dark);
 }
 
@@ -716,16 +718,6 @@ section {
     margin-top: 1rem;
 }
 
-.hobby-link {
-    color: var(--primary-color);
-    text-decoration: none;
-    font-weight: 600;
-    transition: color 0.3s ease;
-}
-
-.hobby-link:hover {
-    color: var(--primary-dark);
-}
 
 /* Project Tags */
 .project-tags {
