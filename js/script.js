@@ -67,16 +67,18 @@ function setActiveNavLink() {
     });
 }
 
-// Navbar background on scroll
-const navbar = document.querySelector('.navbar');
-if (navbar) {
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-            navbar.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)';
-        } else {
-            navbar.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)';
-        }
-    });
+// Navbar background on scroll - initialize after components load
+function initNavbarScroll() {
+    const navbar = document.querySelector('.navbar');
+    if (navbar) {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)';
+            } else {
+                navbar.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)';
+            }
+        });
+    }
 }
 
 // Smooth scroll for anchor links (only if on same page)
@@ -122,6 +124,7 @@ document.querySelectorAll('.skill-card, .project-card, .hobby-card').forEach(car
 window.addEventListener('componentsLoaded', () => {
     setActiveNavLink();
     initMobileMenu();
+    initNavbarScroll();
 });
 
 // Also try to initialize on DOMContentLoaded in case components load synchronously
@@ -131,6 +134,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (document.querySelector('.nav-menu')) {
             setActiveNavLink();
             initMobileMenu();
+            initNavbarScroll();
         }
     }, 100);
 });

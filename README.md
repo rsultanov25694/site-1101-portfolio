@@ -15,28 +15,27 @@ Run one of these commands in the project directory:
 python -m http.server 8000
 ```
 
-**Python 2:**
-```bash
-python -m SimpleHTTPServer 8000
-```
-
-**Node.js (if you have http-server installed):**
-```bash
-npx http-server
-```
-
-Then open `http://localhost:8000/index.html` in your browser.
+Then open `http://localhost:8000/pages/index.html` in your browser.
 
 ## Project Structure
 
-- `index.html` - Home page
-- `about.html` - About page with skills
-- `projects.html` - Projects showcase
-- `hobbies.html` - Hobbies and interests
-- `components/` - Reusable HTML components (navigation, footer)
-- `config.js` - Centralized configuration for social links
-- `script.js` - Main JavaScript functionality
-- `styles.css` - All styling
+```
+portfolio/
+├── pages/              # HTML pages
+│   ├── index.html      # Home page
+│   ├── about.html      # About page with skills
+│   ├── projects.html  # Projects showcase
+│   └── hobbies.html   # Hobbies and interests
+├── js/                 # JavaScript files
+│   ├── config.js      # Centralized configuration for social links
+│   └── script.js      # Main JavaScript functionality
+├── components/         # Reusable HTML components
+│   ├── nav.html       # Navigation component
+│   ├── footer.html    # Footer component
+│   └── loader.js      # Component loader
+├── styles.css         # All styling
+└── README.md          # This file
+```
 
 ## Features
 
