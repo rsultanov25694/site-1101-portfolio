@@ -1,6 +1,6 @@
 # Portfolio Website
 
-Personal portfolio website project for the course "Principles of Info Systems"
+Personal portfolio website project for the course "Principles of Info Systems". It's deployed in https://rsultanov25694.github.io/site-1101-portfolio/index.html
 
 ## Running the Website Locally
 
