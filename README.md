@@ -6,11 +6,11 @@ Personal portfolio website project for the course "Principles of Info Systems". 
 
 This website uses JavaScript's `fetch()` API to load reusable components, which requires a local web server. You cannot open the HTML files directly in a browser due to CORS restrictions.
 
+- From project root, execute:
 ```bash
 python -m http.server 8000
 ```
-
-Then open `http://localhost:8000/pages/index.html` in your browser.
+- Then open `http://localhost:8000/docs/index.html` in your browser.
 
 ## Project Structure
 
