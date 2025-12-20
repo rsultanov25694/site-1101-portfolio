@@ -601,29 +601,11 @@ section {
 }
 
 .about-page .about-content {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 4rem;
     align-items: center;
     max-width: 1000px;
     margin: 0 auto;
 }
 
-.about-page .about-image {
-    display: flex;
-    justify-content: center;
-}
-
-.about-page .about-image .image-placeholder {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    background: var(--bg-secondary);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: var(--shadow-lg);
-}
 
 .about-page .about-text h2 {
     font-size: 2rem;
