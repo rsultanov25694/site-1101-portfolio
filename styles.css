@@ -220,10 +220,6 @@ body {
     color: var(--primary-color);
 }
 
-.repo-link {
-    margin-top: 2rem;
-    display: flex;
-}
 
 .repo-link-button {
     display: inline-flex;

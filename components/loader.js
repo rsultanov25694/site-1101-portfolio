@@ -78,6 +78,24 @@ function updateSocialLinks() {
     if (aboutCodecademyLink && CONFIG.social.codecademy) {
         aboutCodecademyLink.href = CONFIG.social.codecademy;
     }
+    
+    // Update project links
+    document.querySelectorAll('[data-project]').forEach(link => {
+        const projectKey = link.getAttribute('data-project');
+        if (CONFIG.projects && CONFIG.projects[projectKey]) {
+            link.href = CONFIG.projects[projectKey];
+        }
+    });
+    
+    // Update hobby links
+    document.querySelectorAll('[data-hobby]').forEach(link => {
+        const hobbyKey = link.getAttribute('data-hobby');
+        if (hobbyKey === 'tiktok' && CONFIG.social.tiktok) {
+            link.href = CONFIG.social.tiktok;
+        } else if (CONFIG.hobbies && CONFIG.hobbies[hobbyKey]) {
+            link.href = CONFIG.hobbies[hobbyKey];
+        }
+    });
 }
 
 // Initialize components on page load
@@ -85,6 +103,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     // Load components
     await loadNavigation();
     await loadFooter();
+    
+    // Update all links from config (including project and hobby links)
+    updateSocialLinks();
     
     // Trigger initialization event for script.js to handle
     window.dispatchEvent(new CustomEvent('componentsLoaded'));

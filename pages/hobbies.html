@@ -32,8 +32,8 @@
                     <h3>Music</h3>
                     <p>I'm passionate about music and play multiple instruments including drums, guitar, and bass. I play bass in a progressive metal band called Meeras, where we create and perform original compositions. I also share music-related content on TikTok.</p>
                     <div class="hobby-links">
-                        <a href="https://www.youtube.com/watch?v=jRakwEqknzE&list=RDjRakwEqknzE" target="_blank" rel="noopener noreferrer" class="hobby-link">Watch Live Session</a>
-                        <a href="" id="tiktok-link" target="_blank" rel="noopener noreferrer" class="hobby-link">TikTok</a>
+                        <a href="" data-hobby="meerasLiveSession" target="_blank" rel="noopener noreferrer" class="hobby-link">Watch Live Session</a>
+                        <a href="" data-hobby="tiktok" target="_blank" rel="noopener noreferrer" class="hobby-link">TikTok</a>
                     </div>
                 </div>
                 <div class="hobby-card">
@@ -51,17 +51,6 @@
     <script src="../js/config.js"></script>
     <script src="../components/loader.js"></script>
     <script src="../js/script.js"></script>
-    <script>
-        // Update TikTok link after config loads
-        document.addEventListener('DOMContentLoaded', () => {
-            if (typeof CONFIG !== 'undefined' && CONFIG.social.tiktok) {
-                const tiktokLink = document.getElementById('tiktok-link');
-                if (tiktokLink) {
-                    tiktokLink.href = CONFIG.social.tiktok;
-                }
-            }
-        });
-    </script>
 </body>
 </html>
 

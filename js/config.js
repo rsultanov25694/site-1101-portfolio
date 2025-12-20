@@ -7,6 +7,14 @@ const CONFIG = {
     },
     portfolio: {
         repo: 'https://github.com/rsultanov25694/site-1101-portfolio'
+    },
+    projects: {
+        logicGates: 'https://www.youtube.com/watch?v=TSWb8cQtXGI',
+        nandGate: 'https://www.youtube.com/watch?v=MYfViZtFKl4',
+        hourOfCode: 'https://www.youtube.com/watch?v=Vr9FSQtQRgc'
+    },
+    hobbies: {
+        meerasLiveSession: 'https://www.youtube.com/watch?v=jRakwEqknzE&list=RDjRakwEqknzE'
     }
 };
 
