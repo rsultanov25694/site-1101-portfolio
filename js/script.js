@@ -1,4 +1,3 @@
-// Reset hamburger menu animation
 function resetHamburgerMenu(menuToggle) {
     if (!menuToggle) return;
     const spans = menuToggle.querySelectorAll('span');
@@ -9,7 +8,6 @@ function resetHamburgerMenu(menuToggle) {
     }
 }
 
-// Animate hamburger menu to X
 function animateHamburgerMenu(menuToggle) {
     if (!menuToggle) return;
     const spans = menuToggle.querySelectorAll('span');
@@ -20,7 +18,6 @@ function animateHamburgerMenu(menuToggle) {
     }
 }
 
-// Initialize mobile menu functionality
 function initMobileMenu() {
     const menuToggle = document.querySelector('.menu-toggle');
     const navMenu = document.querySelector('.nav-menu');
@@ -51,7 +48,6 @@ function initMobileMenu() {
     });
 }
 
-// Set active navigation link based on current page
 function setActiveNavLink() {
     const currentPage = window.location.pathname.split('/').pop() || 'index.html';
     const navLinks = document.querySelectorAll('.nav-link');
@@ -67,7 +63,6 @@ function setActiveNavLink() {
     });
 }
 
-// Navbar background on scroll - initialize after components load
 function initNavbarScroll() {
     const navbar = document.querySelector('.navbar');
     if (navbar) {
@@ -81,7 +76,6 @@ function initNavbarScroll() {
     }
 }
 
-// Smooth scroll for anchor links (only if on same page)
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         const targetId = this.getAttribute('href').substring(1);
